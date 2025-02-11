@@ -1,9 +1,11 @@
 # DSCCTF
 
-BY FOLLOWING CULES WE CAN TRY DIFFERENT VARIATION TO GET THE FINAL FLAG 
+BY FOLLOWING CULES WE CAN TRY DIFFERENT VARIATION OF CURL  TO GET THE FINAL FLAG 
 
 $ curl -s https://secretgroup.ctf.dscjssstuniv.in/
 <p>Not an agent of the <b>dsc-4dm1n</b> secure browser!</p>
+$ curl -H "Referer: https://secretgroup.ctf.dscjssstuniv.in/"      -H "User-Agent: dsc-4dm1n"      -H "Accept: */*"      https://secretgroup.ctf.dscjssstuniv.in/
+<p>Does not Accept <b>fl4g</b></p>
 
 $ curl -H "Referer: https://secretgroup.ctf.dscjssstuniv.in/"      -H "User-*/*"pt: fl4g"      -H "Give-Flag: true"      https://secretgroup.ctf.dscjssstuniv.in/
 <p>Does not Accept <b>fl4g</b></p>
